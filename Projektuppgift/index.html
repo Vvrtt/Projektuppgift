@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Min hemsida med Bootstrap 5</title>
+  <!-- Lägger till Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Lägger till Font Awesome-ikoner för logotyp och andra ikoner -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* Anpassad CSS för sidhuvud*/
+    .header {
+      background-image: url('header-background.jpg'); /* Sökvägen till bildfil */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: grey;
+    }
+
+    .logo-icon {
+      font-size: 46px; /* Justera storleken efter behov */
+      color: grey; /* Ändrar färgen på logotypen till grå */
+      position: absolute;
+      top: 10px;
+      left: 30px;
+    }
+
+    /* Ändrar textstorleken för all text inuti .container */
+    .container {
+      font-size: 30px; /* Justera storleken efter behov */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Sidhuvud -->
+<header class="header text-center py-5">
+  <div class="container"> 
+    <i class="logo-icon fa fa-star"></i>
+    <h1 class="display-4">Min hemsida med Bootstrap 5</h1>
+    <p class="lead">Uppgift för kursprojektet</p>
+  </div>
+</header>
+
+<!-- Navigationsfält -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" style="font-size: 30px;" href="#">Menu</a> <!-- Ändrar textstorleken på menyn -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Annat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Annat</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Två kolumner med text och bild -->
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-6">
+      <h2 class="display-4">Text</h2>
+      <p class="lead" style="font-size: 30px;"> <!-- Ändrar textstorleken för texten i kolumnen -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quasi consectetur recusandae quae minus fugit magni repellat et sint corrupti deleniti sequi rem, voluptate veritatis dolorum delectus impedit eaque optio doloribus assumenda architecto! Libero error, dolor inventore odio accusamus rerum voluptates aut magni ipsum sunt, rem officia odit, maiores eius?</p>
+    </div>
+    <div class="col-lg-6">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus optio sint et ab ad! <i class="fa fa-picture-o fa-5x"></i> <!-- Använder en ikon för att visa en bild -->
+      <img src="image.jpg" class="img-fluid mt-3" style="padding: 16px;" alt="En bild">
+    </div>
+  </div>
+</div>
+
+<!-- Bildgalleri med en bild -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center display-4">En bild här</h2>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <i class="fa fa-picture-o fa-5x"></i> <!-- Använder en ikon för att visa en bild -->
+        <img src="image2.jpg" class="img-fluid" alt="En Bild 2">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Minimerad foterskärm -->
+<footer class="bg-dark text-white text-center py-2">
+  <div class="container">
+    &copy; 2023 Min Webbsida
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
